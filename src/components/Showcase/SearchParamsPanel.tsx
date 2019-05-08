@@ -2,6 +2,7 @@ import React from 'react';
 import { classes, genres, subjects } from './constants';
 import { TonChange, THandleSearch } from './Showcase';
 import searchIcon from './search-icon.svg';
+import ReactSVG from 'react-svg';
 
 interface IProps {
   handleSearch: THandleSearch,
@@ -100,7 +101,7 @@ const SearchParamsPanel = (props: IProps) => {
           value={search}
         />
         <button className="showcase__search" onClick={handleSearch}>
-          <img src={searchIcon} alt="search-icon" />
+          <ReactSVG src={searchIcon} />
         </button>
       </div>
     </div>
