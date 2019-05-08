@@ -1,0 +1,50 @@
+.showcase
+  &__title
+    text-align: center
+
+  &__search-params
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0 15px
+
+  &__param
+    display: flex
+    align-items: center
+    flex-basis: 20%
+    padding: 0 11px
+
+    &:first-child
+      padding-left: 0
+
+    &:last-child  
+      padding-right: 0
+
+  &__search
+    display: inline-block
+    margin-left: 6px
+    height: 32px
+    width: 32px
+    outline: none
+    background-color: transparent
+    border: none
+    cursor: pointer
+    vertical-align: middle
+    box-sizing: content-box
+
+@media screen and (max-width: 768px)
+  .showcase
+    &__param
+      padding-bottom: 15px
+      flex-basis: 25%
+
+    &__param:last-child
+      flex-basis: 100%
+      padding: 0
+
+@media screen and (max-width: 575px)
+  .showcase
+    &__param
+      flex-basis: 100%
+      padding: 0 0 15px

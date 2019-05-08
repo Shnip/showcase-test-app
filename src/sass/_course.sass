@@ -1,0 +1,64 @@
+%course__p
+  margin: .4em 0
+  padding-left: .5em
+  font-size: 14px
+  font-weight: normal
+  line-height: 22px
+
+.course
+  &__list
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 60px 0 20px
+    
+  &__list-item
+    // flex-basis: 18%
+    width: 170px
+    min-height: 260px
+    border: solid 1px #b5b5b5
+    border-radius: 10px
+    background: #fff
+    margin: 0 15px 55px
+    overflow: hidden
+
+  &__logo
+    position: relative
+    overflow: hidden
+    height: 134px
+    background: #ddd
+  
+  &__info
+    padding: 10px 16px
+
+  &__img
+    width: 100%
+  
+  &__title
+    @extend %course__p
+    padding-left: .5em
+    margin: 0
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+  
+  &__grade
+    @extend %course__p
+    margin-top: -.2em
+
+  &__genre
+    @extend %course__p
+    margin-top: -.4em
+    font-size: 11px
+
+  &__meta
+    @extend %course__p  
+    margin-bottom: 0
+    font-size: 12px
+    font-weight: 600
+
+  &__controls
+    @extend %course__p
+    margin-bottom: 0
+    padding-left: 0
+    font-size: 12px
